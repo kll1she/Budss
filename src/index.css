@@ -1,13 +1,98 @@
-body {
+/***********ОБНУЛЕНИЕ************/
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*************************/
+
+
+/* Подключение шрифта */
+@font-face {
+  font-family: 'Outfit';
+  src: url('../src/assets/fonts/Outfit.woff2') format('woff2');
+  font-weight: 100 900; /* Диапазон весов от 100 до 900 */
+  font-style: normal; /* Для обычного начертания */
+}
+
+main {
+  overflow: hidden;
+}
+body {
+  background: #181818;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.button {
+  font-size: 20px;
+  padding: 16px 0;
+  width: 100%;
+  border-radius: 16px;
+  border: 4px solid #954CED;
+  color: #fff;
+  background: linear-gradient(45deg, #181818 50%, #954CED 50%);
+  background-size: 400%;
+  background-position: 100%;
+  transition: background 0.6s ease, transform 0.4s ease, border-radius 0.6s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-position: 0;
+}
+
+.button:disabled {
+  border: 4px solid #B9B9B9;
+  background: #B9B9B9;
+}
+.button:active {
+  background: #7B31D4;
+  border-color: #7B31D4;
+}
+
+.button:focus {
+  border-color: #BA8BF3;
+}
+
+@media screen and (min-width: 576px) {
+  .button {
+      max-width: 182px;
+  }
 }
