@@ -1,1 +1,84 @@
-.percentages {}
+/* PERCENTAGES */
+.percentages {
+    padding: 40px 0;
+    background: #954CED;
+}
+.percentages_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.percentages_element {
+    display: flex;
+}
+.percentages_element:not(:last-child) {
+    margin-bottom: 40px;
+}
+.percentages_element_number {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.percentages_element_text {
+    font-size: 20px;
+    font-weight: 500;
+    align-content: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+    /* PERSENTAGES */
+    .percentages {
+        display: flex;
+        justify-content: center;
+    }
+    .percentages_element_number {
+        font-size: 48px;
+    }
+    .percentages_element_text {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+}
+
+/*576px - 768px*/
+@media screen and (min-width: 768px) {
+                     
+}
+/*768px - 992px*/
+@media screen and (min-width: 992px) {
+                        
+}
+/*992px - 1300px*/
+@media screen and (min-width: 1300px) {
+    /* PERCENTAGES */
+    .percentages_wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+    }
+    .percentages_element {
+        flex-direction: column;
+        max-width: 200px;
+    }
+    .percentages_element:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .percentages_element_number {
+        font-size: 64px;
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .percentages_element_text {
+        font-size: 24px;
+        font-weight: 500;
+        align-content: center;
+        text-align: center;
+    }                
+}

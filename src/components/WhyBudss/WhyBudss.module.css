@@ -1,1 +1,168 @@
-.whyBudss {}
+/* WHY BUDSS */
+.whyBudss {
+    padding: 40px 0;
+    overflow: hidden;
+}
+.whyBudss_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whyBudss_title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.whyBudss_text {
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 350px;
+    z-index: 2;
+}
+.whyBudss_image {
+    position: absolute;
+    translate: -73px -63px;
+    width: 244px;
+    height: auto;
+}
+.whyBudss_reasons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.whyBudss_reasons_block {
+    background: #F5F5F5;
+    color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    height: 395px;
+    width: 343px;
+}
+.whyBudss_reasons_block_title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.whyBudss_reasons_block_text {
+    font-size: 16px;
+    font-weight: 400;
+}
+.whyBudss_reasons_block_image {
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+}
+.first {
+    translate: -20px 54px;
+}
+.second {
+    translate: -20px 83px;
+}
+.third {
+    translate: -20px -97px;
+}
+.four {
+    translate: -20px -180px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 700px) {
+
+}
+
+/*576px - 768px*/
+@media screen and (min-width: 768px) {
+                  
+}
+/*768px - 992px*/
+@media screen and (min-width: 992px) {
+                        
+}
+/*992px - 1300px*/
+@media screen and (min-width: 1300px) {
+    /* WHY BUDSS */
+    .whyBudss {
+        padding: 100px 0;
+    }
+    .whyBudss_title {
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+    .whyBudss_text {
+        display: flex;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 70px;
+        max-width: 664px;
+        z-index: 2;
+    }
+    .whyBudss_image {
+        position: absolute;
+        translate: -189px -106px;
+        width: 387px;
+        height: auto;
+    }
+    .whyBudss_reasons_block_title {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .whyBudss_reasons_block_text {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .whyBudss_reasons_block {
+        height: 362px;
+        padding: 40px;
+    }
+    .first_block {
+        width: 733px;
+    }
+    .first {
+        translate: -40px -332px;
+        border-radius: 20px;
+    }
+    .first_text {
+        margin-left: 329px;
+    }
+    .second_block {
+        width: 547px;
+    }
+    .second {
+        translate: -40px -155px;
+    }
+    .second_text {
+        max-width: 416px;
+    }
+    .third_block {
+        width: 547px;
+    }
+    .third {
+        translate: -40px -243px;
+    }
+    .third_text {
+        max-width: 440px;
+    }
+    .four_block {
+        width: 733px;
+    }
+    .four {
+        translate: -40px -236px;
+    }
+    .four_text {
+        max-width: 402px;
+    }                   
+}

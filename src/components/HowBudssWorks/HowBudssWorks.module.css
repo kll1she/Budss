@@ -1,1 +1,105 @@
-.howBudssWorks {}
+/* HOWWORKS */
+.howWorks {
+    padding: 140px 0;
+    position: relative;
+  }
+  
+  .howWorks_movingText {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 6.3vh; /* Высота строки */
+  }
+  
+  .howWorks_movingText:not(:last-of-type) {
+    margin-bottom: 93px;
+  }
+  
+  .scrolling_text {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+  }
+  
+.reverse {
+    animation-direction: reverse;
+  }
+  
+  .howWorks_movingText_text {
+    font-size: 6.3vh;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+  
+  .border {
+    color: #181818;
+    text-shadow: -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444, 1px 1px 0 #444;
+  }
+  
+  .green {
+    color: #2FDBBC;
+  }
+  
+  .purple {
+    color: #A64CED;
+  }
+  
+  .orange {
+    color: #FFAA4C;
+  }
+  
+  .howWorks_image {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 228px;
+    height: auto;
+    top: 50%; /* Центрируем по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Смещаем центр изображения */
+  }
+  
+  @keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+  }
+
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 700px) {
+
+}
+
+/*576px - 768px*/
+@media screen and (min-width: 768px) {
+                     
+}
+/*768px - 992px*/
+@media screen and (min-width: 992px) {
+                        
+}
+/*992px - 1300px*/
+@media screen and (min-width: 1300px) {
+    /* HOW WORKS */
+    .howWorks_image {
+      width: 27vw;
+    }
+    .howWorks_movingText {
+        height: 16vh;
+    }
+    .howWorks_movingText_text {
+        font-size: 16vh;
+    }                
+}

@@ -1,0 +1,109 @@
+/* AWARENESS */
+.awareness {
+    background: #fff;
+    color: #000;
+}
+.awareness_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.awareness_textBlock {
+    max-width: 430px;
+}
+.awareness_textBlock_title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.awareness_textBlock_text {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+.awareness_social {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.awareness_social_icon {
+    width: 64px;
+    height: auto;
+}
+.awareness_social a:nth-child(2) .awareness_social_icon,
+.awareness_social a:nth-child(4) .awareness_social_icon {
+    margin-top: 64px;
+}
+.awareness_companies {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.awareness_companies_icon {
+    height: 28px;
+    width: auto;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+    /* AWARENESS */
+    .awareness_social {
+        max-width: 480px;
+    }
+    .awareness_social_icon {
+        width: 90px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+}
+
+/*576px - 768px*/
+@media screen and (min-width: 768px) {
+                    
+}
+/*768px - 992px*/
+@media screen and (min-width: 992px) {
+                        
+}
+
+@media screen and (min-width: 1012px) {
+    .awareness_wrapper {
+        text-align: left;
+    }
+    .awareness_textBlock {
+        margin-right: 20px;
+    }
+}
+
+/*992px - 1300px*/
+@media screen and (min-width: 1300px) {
+    /* AWARENESS */
+    .awareness_wrapper {
+        align-items: center;
+    }
+    .awareness_textBlock {
+        max-width: 822px;
+        margin-right: 30px;
+    }
+    .awareness_textBlock_title {
+        font-size: 96px;
+    }
+    .awareness_textBlock_text {
+        max-width: 537px;
+    }
+    .awareness_companies {
+        gap: 90px 70px;
+        flex-wrap: wrap;
+        padding: 100px 0;
+    }
+    .awareness_companies_icon {
+        height: 50px;
+        width: auto;
+    }                 
+}
