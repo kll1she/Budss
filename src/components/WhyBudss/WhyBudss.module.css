@@ -1,5 +1,6 @@
 /* WHY BUDSS */
 .whyBudss {
+    display: flex;
     padding: 40px 0;
     overflow: hidden;
 }
@@ -35,6 +36,7 @@
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 720px;
 }
 .whyBudss_reasons_block {
     background: #F5F5F5;
@@ -114,6 +116,9 @@
         translate: -189px -106px;
         width: 387px;
         height: auto;
+    }
+    .whyBudss_reasons {
+        max-width: 1300px;
     }
     .whyBudss_reasons_block_title {
         font-size: 48px;

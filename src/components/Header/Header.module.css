@@ -83,6 +83,9 @@ input[type="radio"]:checked + label {
 /* RESPONSIVE */
 
 @media screen and (min-width: 576px) {
+    .switch_wrapper {
+        margin-left: 10%;
+    }
     .burger {
         display: none;
     }

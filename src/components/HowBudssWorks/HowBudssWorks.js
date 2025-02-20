@@ -9,11 +9,11 @@ const HowBudssWorks = () => (
         <div className={styles.howWorks_wrapper}>
             {/* Первая строка */}
             <div className={styles.howWorks_movingText}>
-                <div className={`${styles.scrolling_text} ${styles.reverse}`}>
+                <div className={`${styles.scrolling_text} ${styles.marquee1} ${styles.reverse}`}>
                     <p className={`${styles.howWorks_movingText_text} ${styles.green}`}>How Budss Works</p>
                     <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
                 </div>
-                <div aria-hidden="true" className={`${styles.scrolling_text} ${styles.reverse}`}>
+                <div className={`${styles.scrolling_text} ${styles.marquee2} ${styles.reverse}`}>
                     <p className={`${styles.howWorks_movingText_text} ${styles.green}`}>How Budss Works</p>
                     <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
                 </div>
@@ -21,23 +21,23 @@ const HowBudssWorks = () => (
 
             {/* Вторая строка */}
             <div className={styles.howWorks_movingText}>
-                <div className={styles.scrolling_text}>
-                    <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
+                <div className={`${styles.scrolling_text} ${styles.marquee1}`}>
                     <p className={`${styles.howWorks_movingText_text} ${styles.purple}`}>How Budss Works</p>
+                    <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
                 </div>
-                <div aria-hidden="true" className={styles.scrolling_text}>
-                    <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
+                <div className={`${styles.scrolling_text} ${styles.marquee2}`}>
                     <p className={`${styles.howWorks_movingText_text} ${styles.purple}`}>How Budss Works</p>
+                    <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
                 </div>
             </div>
 
             {/* Третья строка */}
             <div className={styles.howWorks_movingText}>
-                <div className={`${styles.scrolling_text} ${styles.reverse}`}>
+                <div className={`${styles.scrolling_text} ${styles.marquee1} ${styles.reverse}`}>
                     <p className={`${styles.howWorks_movingText_text} ${styles.orange}`}>How Budss Works</p>
                     <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
                 </div>
-                <div aria-hidden="true" className={`${styles.scrolling_text} ${styles.reverse}`}>
+                <div className={`${styles.scrolling_text} ${styles.marquee2} ${styles.reverse}`}>
                     <p className={`${styles.howWorks_movingText_text} ${styles.orange}`}>How Budss Works</p>
                     <p className={`${styles.howWorks_movingText_text} ${styles.border}`}>How Budss Works</p>
                 </div>

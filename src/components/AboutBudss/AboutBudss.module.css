@@ -73,6 +73,20 @@
 }
 /*768px - 992px*/
 @media screen and (min-width: 992px) {
+    .about_description_title {
+        font-size: 64px;
+    }
+    .about_description_text {
+        font-size: 24px;;
+        width: 90%;
+        max-width: 280px;
+    }
+    .list_element_title {
+        font-size: 36px;
+    }
+    .list_element_text {
+        font-size: 20px;
+    }
                         
 }
 /*992px - 1300px*/

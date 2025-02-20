@@ -36,7 +36,7 @@ const Footer = () => (
             </div>
           </div>
 
-          <button id="contact_button" className={styles.footer_button}>Contact sales</button>
+          <button id="contact_button" className={`button ${styles.footer_button}`}>Contact sales</button>
 
           <picture>
             <source srcSet={appstoreWebp} type="image/webp" className={styles.footer_img} />

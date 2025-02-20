@@ -54,7 +54,15 @@
 /*768px - 992px*/
 @media screen and (min-width: 992px) {
     .hero_image {
-        height: 320px;
+        height: 400px;
+        translate: 364px -478px;
+    }
+    .hero_offer_title {
+        font-size: 64px;
+    }
+    .hero_offer_text {
+        font-size: 20px;
+        max-width: 421px;
     }
                         
 }

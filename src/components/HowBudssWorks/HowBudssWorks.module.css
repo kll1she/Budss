@@ -5,6 +5,7 @@
   }
   
   .howWorks_movingText {
+    display: flex;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -19,11 +20,6 @@
     display: flex;
     gap: 20px;
     white-space: nowrap;
-    animation: scroll 10s linear infinite;
-  }
-  
-.reverse {
-    animation-direction: reverse;
   }
   
   .howWorks_movingText_text {
@@ -60,16 +56,39 @@
     left: 50%; /* Центрируем по горизонтали */
     transform: translate(-50%, -50%); /* Смещаем центр изображения */
   }
-  
-  @keyframes scroll {
-    from {
-        transform: translateX(0);
+
+  /* ANIMATION */
+
+  .marquee1 {
+    animation: marquee1 20s infinite linear;
+    animation-delay: -20s;
+  }
+  .marquee2 {
+    animation: marquee2 20s infinite linear;
+    animation-delay: -10s;
+  }
+
+  .reverse {
+    animation-direction: reverse;
+  }
+
+  @keyframes marquee1 {
+    0% {
+      transform: translateX(100%);
     }
-    to {
-        transform: translateX(calc(-100% - 20px));
+    100% {
+      transform: translateX(-100%);
     }
   }
 
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
 
 
 /* RESPONSIVE */
@@ -88,6 +107,12 @@
 }
 /*768px - 992px*/
 @media screen and (min-width: 992px) {
+  .howWorks_movingText {
+    height: 9vh; /* Высота строки */
+  }
+  .howWorks_movingText_text {
+    font-size: 9vh;
+  }
                         
 }
 /*992px - 1300px*/
